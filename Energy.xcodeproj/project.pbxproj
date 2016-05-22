@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F467EF6A1CEB9E7D0037948B /* NRGSecondaryBox.h in Headers */ = {isa = PBXBuildFile; fileRef = F467EF681CEB9E7D0037948B /* NRGSecondaryBox.h */; };
+		F467EF6B1CEB9E7D0037948B /* NRGSecondaryBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F467EF691CEB9E7D0037948B /* NRGSecondaryBox.m */; };
+		F474D7A51CEE693B00FE6DE0 /* NRGConfigurationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F474D7A71CEE693B00FE6DE0 /* NRGConfigurationWindowController.xib */; };
+		F474D7A81CEE694300FE6DE0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F474D7AA1CEE694300FE6DE0 /* Localizable.strings */; };
+		F4790AB21CEDA31E001E9ECA /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4790AB01CEDA31E001E9ECA /* thumbnail.png */; };
+		F4790AB31CEDA31E001E9ECA /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4790AB11CEDA31E001E9ECA /* thumbnail@2x.png */; };
+		F486507A1CEFB32600523639 /* SlideShows.h in Headers */ = {isa = PBXBuildFile; fileRef = F48650781CEFB32600523639 /* SlideShows.h */; };
+		F486507D1CEFB36C00523639 /* Slideshows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486507C1CEFB36C00523639 /* Slideshows.framework */; };
+		F488E0091CF21E8500C4B7A0 /* NRGModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F488E0081CF21E8500C4B7A0 /* NRGModuleView.xib */; };
+		F4A7930F1CF1D42300E2EFD7 /* NRGCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A793091CF1D42300E2EFD7 /* NRGCollectionView.h */; };
+		F4A793101CF1D42300E2EFD7 /* NRGCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A7930A1CF1D42300E2EFD7 /* NRGCollectionView.m */; };
+		F4A793111CF1D42300E2EFD7 /* NRGCollectionViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A7930B1CF1D42300E2EFD7 /* NRGCollectionViewItem.h */; };
+		F4A793121CF1D42300E2EFD7 /* NRGCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A7930C1CF1D42300E2EFD7 /* NRGCollectionViewItem.m */; };
+		F4A793131CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A7930D1CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.h */; };
+		F4A793141CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A7930E1CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.m */; };
+		F4B5102C1CED066400929C15 /* limitedPower.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B510281CED066400929C15 /* limitedPower.png */; };
+		F4B5102D1CED066400929C15 /* limitedPower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B510291CED066400929C15 /* limitedPower@2x.png */; };
+		F4B5102E1CED066400929C15 /* unlimitedPower.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B5102A1CED066400929C15 /* unlimitedPower.png */; };
+		F4B5102F1CED066400929C15 /* unlimitedPower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B5102B1CED066400929C15 /* unlimitedPower@2x.png */; };
+		F4B5E6001CEE596F00B989C9 /* iLifeMediaBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5E5FF1CEE596F00B989C9 /* iLifeMediaBrowser.framework */; };
+		F4B5E6021CEE5FE800B989C9 /* ILifeMediaBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B5E6011CEE5FE800B989C9 /* ILifeMediaBrowser.h */; };
+		F4C49E4E1CEB63AC009D3B72 /* NRGWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C49E4C1CEB63AC009D3B72 /* NRGWindow.h */; };
+		F4C49E4F1CEB63AC009D3B72 /* NRGWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C49E4D1CEB63AC009D3B72 /* NRGWindow.m */; };
+		F4C49E531CEB6503009D3B72 /* NRGAboutBoxWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C49E501CEB6503009D3B72 /* NRGAboutBoxWindowController.h */; };
+		F4C49E541CEB6503009D3B72 /* NRGAboutBoxWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C49E511CEB6503009D3B72 /* NRGAboutBoxWindowController.m */; };
+		F4C49E551CEB6503009D3B72 /* NRGAboutBoxWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C49E521CEB6503009D3B72 /* NRGAboutBoxWindowController.xib */; };
+		F4C49E5B1CEB6DAE009D3B72 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C49E5A1CEB6DAE009D3B72 /* IOKit.framework */; };
+		F4E66C9F1CEB5F1C00BF25EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E66C9E1CEB5F1C00BF25EA /* Cocoa.framework */; };
+		F4E66CA11CEB5F1C00BF25EA /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E66CA01CEB5F1C00BF25EA /* ScreenSaver.framework */; };
+		F4E66CAF1CEB5F1C00BF25EA /* NRGEnergySaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E66CAE1CEB5F1C00BF25EA /* NRGEnergySaverView.m */; };
+		F4E66CB71CEB5F2C00BF25EA /* NRGSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E66CB51CEB5F2C00BF25EA /* NRGSettings.h */; };
+		F4E66CB81CEB5F2C00BF25EA /* NRGSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E66CB61CEB5F2C00BF25EA /* NRGSettings.m */; };
+		F4E66CBD1CEB618900BF25EA /* ScreenSaverModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E66CBB1CEB618900BF25EA /* ScreenSaverModule.h */; };
+		F4E66CC31CEB634000BF25EA /* NRGConfigurationWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E66CC01CEB634000BF25EA /* NRGConfigurationWindowController.h */; };
+		F4E66CC41CEB634000BF25EA /* NRGConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E66CC11CEB634000BF25EA /* NRGConfigurationWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F467EF681CEB9E7D0037948B /* NRGSecondaryBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGSecondaryBox.h; sourceTree = "<group>"; };
+		F467EF691CEB9E7D0037948B /* NRGSecondaryBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGSecondaryBox.m; sourceTree = "<group>"; };
+		F474D7A61CEE693B00FE6DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NRGConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F474D7A91CEE694300FE6DE0 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4790AB01CEDA31E001E9ECA /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		F4790AB11CEDA31E001E9ECA /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		F48650781CEFB32600523639 /* SlideShows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideShows.h; sourceTree = "<group>"; };
+		F486507C1CEFB36C00523639 /* Slideshows.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Slideshows.framework; path = System/Library/PrivateFrameworks/Slideshows.framework; sourceTree = SDKROOT; };
+		F488E0081CF21E8500C4B7A0 /* NRGModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRGModuleView.xib; sourceTree = "<group>"; };
+		F488E00D1CF25EDE00C4B7A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/NRGConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F488E00E1CF25EDE00C4B7A0 /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4A793091CF1D42300E2EFD7 /* NRGCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGCollectionView.h; sourceTree = "<group>"; };
+		F4A7930A1CF1D42300E2EFD7 /* NRGCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGCollectionView.m; sourceTree = "<group>"; };
+		F4A7930B1CF1D42300E2EFD7 /* NRGCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGCollectionViewItem.h; sourceTree = "<group>"; };
+		F4A7930C1CF1D42300E2EFD7 /* NRGCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGCollectionViewItem.m; sourceTree = "<group>"; };
+		F4A7930D1CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGCollectionViewItemLabel.h; sourceTree = "<group>"; };
+		F4A7930E1CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGCollectionViewItemLabel.m; sourceTree = "<group>"; };
+		F4B510281CED066400929C15 /* limitedPower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = limitedPower.png; path = images/limitedPower.png; sourceTree = "<group>"; };
+		F4B510291CED066400929C15 /* limitedPower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "limitedPower@2x.png"; path = "images/limitedPower@2x.png"; sourceTree = "<group>"; };
+		F4B5102A1CED066400929C15 /* unlimitedPower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unlimitedPower.png; path = images/unlimitedPower.png; sourceTree = "<group>"; };
+		F4B5102B1CED066400929C15 /* unlimitedPower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unlimitedPower@2x.png"; path = "images/unlimitedPower@2x.png"; sourceTree = "<group>"; };
+		F4B5E5FF1CEE596F00B989C9 /* iLifeMediaBrowser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iLifeMediaBrowser.framework; path = System/Library/PrivateFrameworks/iLifeMediaBrowser.framework; sourceTree = SDKROOT; };
+		F4B5E6011CEE5FE800B989C9 /* ILifeMediaBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILifeMediaBrowser.h; sourceTree = "<group>"; };
+		F4C49E4C1CEB63AC009D3B72 /* NRGWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGWindow.h; sourceTree = "<group>"; };
+		F4C49E4D1CEB63AC009D3B72 /* NRGWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGWindow.m; sourceTree = "<group>"; };
+		F4C49E501CEB6503009D3B72 /* NRGAboutBoxWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGAboutBoxWindowController.h; sourceTree = "<group>"; };
+		F4C49E511CEB6503009D3B72 /* NRGAboutBoxWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGAboutBoxWindowController.m; sourceTree = "<group>"; };
+		F4C49E521CEB6503009D3B72 /* NRGAboutBoxWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRGAboutBoxWindowController.xib; sourceTree = "<group>"; };
+		F4C49E5A1CEB6DAE009D3B72 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F4E66C9B1CEB5F1C00BF25EA /* Energy.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Energy.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E66C9E1CEB5F1C00BF25EA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F4E66CA01CEB5F1C00BF25EA /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		F4E66CA31CEB5F1C00BF25EA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F4E66CA51CEB5F1C00BF25EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4E66CA81CEB5F1C00BF25EA /* Energy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Energy-Info.plist"; sourceTree = "<group>"; };
+		F4E66CAC1CEB5F1C00BF25EA /* Energy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Energy-Prefix.pch"; sourceTree = "<group>"; };
+		F4E66CAD1CEB5F1C00BF25EA /* NRGEnergySaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRGEnergySaverView.h; sourceTree = "<group>"; };
+		F4E66CAE1CEB5F1C00BF25EA /* NRGEnergySaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRGEnergySaverView.m; sourceTree = "<group>"; };
+		F4E66CB51CEB5F2C00BF25EA /* NRGSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGSettings.h; sourceTree = "<group>"; };
+		F4E66CB61CEB5F2C00BF25EA /* NRGSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGSettings.m; sourceTree = "<group>"; };
+		F4E66CBA1CEB617500BF25EA /* ScreenSaverModules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenSaverModules.h; sourceTree = "<group>"; };
+		F4E66CBB1CEB618900BF25EA /* ScreenSaverModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSaverModule.h; sourceTree = "<group>"; };
+		F4E66CC01CEB634000BF25EA /* NRGConfigurationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGConfigurationWindowController.h; sourceTree = "<group>"; };
+		F4E66CC11CEB634000BF25EA /* NRGConfigurationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGConfigurationWindowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4E66C961CEB5F1C00BF25EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B5E6001CEE596F00B989C9 /* iLifeMediaBrowser.framework in Frameworks */,
+				F486507D1CEFB36C00523639 /* Slideshows.framework in Frameworks */,
+				F4C49E5B1CEB6DAE009D3B72 /* IOKit.framework in Frameworks */,
+				F4E66CA11CEB5F1C00BF25EA /* ScreenSaver.framework in Frameworks */,
+				F4E66C9F1CEB5F1C00BF25EA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F486507E1CEFB37100523639 /* Private Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4B5E5FF1CEE596F00B989C9 /* iLifeMediaBrowser.framework */,
+				F486507C1CEFB36C00523639 /* Slideshows.framework */,
+			);
+			name = "Private Frameworks";
+			sourceTree = "<group>";
+		};
+		F4B510271CED064A00929C15 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F4B510281CED066400929C15 /* limitedPower.png */,
+				F4B510291CED066400929C15 /* limitedPower@2x.png */,
+				F4B5102A1CED066400929C15 /* unlimitedPower.png */,
+				F4B5102B1CED066400929C15 /* unlimitedPower@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F4C49E4B1CEB63A2009D3B72 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4A793091CF1D42300E2EFD7 /* NRGCollectionView.h */,
+				F4A7930A1CF1D42300E2EFD7 /* NRGCollectionView.m */,
+				F4A7930B1CF1D42300E2EFD7 /* NRGCollectionViewItem.h */,
+				F4A7930C1CF1D42300E2EFD7 /* NRGCollectionViewItem.m */,
+				F4A7930D1CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.h */,
+				F4A7930E1CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.m */,
+				F467EF681CEB9E7D0037948B /* NRGSecondaryBox.h */,
+				F467EF691CEB9E7D0037948B /* NRGSecondaryBox.m */,
+				F4C49E4C1CEB63AC009D3B72 /* NRGWindow.h */,
+				F4C49E4D1CEB63AC009D3B72 /* NRGWindow.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		F4E66C901CEB5F1C00BF25EA = {
+			isa = PBXGroup;
+			children = (
+				F4E66CA61CEB5F1C00BF25EA /* Energy */,
+				F4E66C9D1CEB5F1C00BF25EA /* Frameworks */,
+				F4E66C9C1CEB5F1C00BF25EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4E66C9C1CEB5F1C00BF25EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4E66C9B1CEB5F1C00BF25EA /* Energy.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4E66C9D1CEB5F1C00BF25EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F486507E1CEFB37100523639 /* Private Frameworks */,
+				F4C49E5A1CEB6DAE009D3B72 /* IOKit.framework */,
+				F4E66C9E1CEB5F1C00BF25EA /* Cocoa.framework */,
+				F4E66CA01CEB5F1C00BF25EA /* ScreenSaver.framework */,
+				F4E66CA21CEB5F1C00BF25EA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4E66CA21CEB5F1C00BF25EA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4E66CA31CEB5F1C00BF25EA /* AppKit.framework */,
+				F4E66CA51CEB5F1C00BF25EA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F4E66CA61CEB5F1C00BF25EA /* Energy */ = {
+			isa = PBXGroup;
+			children = (
+				F4E66CB91CEB616A00BF25EA /* Private APIs */,
+				F4E66CAD1CEB5F1C00BF25EA /* NRGEnergySaverView.h */,
+				F4E66CAE1CEB5F1C00BF25EA /* NRGEnergySaverView.m */,
+				F4E66CB51CEB5F2C00BF25EA /* NRGSettings.h */,
+				F4E66CB61CEB5F2C00BF25EA /* NRGSettings.m */,
+				F4E66CBF1CEB629600BF25EA /* Configuration */,
+				F4E66CA71CEB5F1C00BF25EA /* Supporting Files */,
+			);
+			path = Energy;
+			sourceTree = "<group>";
+		};
+		F4E66CA71CEB5F1C00BF25EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4B510271CED064A00929C15 /* Images */,
+				F474D7AA1CEE694300FE6DE0 /* Localizable.strings */,
+				F4790AB01CEDA31E001E9ECA /* thumbnail.png */,
+				F4790AB11CEDA31E001E9ECA /* thumbnail@2x.png */,
+				F4E66CA81CEB5F1C00BF25EA /* Energy-Info.plist */,
+				F4E66CAC1CEB5F1C00BF25EA /* Energy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4E66CB91CEB616A00BF25EA /* Private APIs */ = {
+			isa = PBXGroup;
+			children = (
+				F48650781CEFB32600523639 /* SlideShows.h */,
+				F4B5E6011CEE5FE800B989C9 /* ILifeMediaBrowser.h */,
+				F4E66CBA1CEB617500BF25EA /* ScreenSaverModules.h */,
+				F4E66CBB1CEB618900BF25EA /* ScreenSaverModule.h */,
+			);
+			name = "Private APIs";
+			sourceTree = "<group>";
+		};
+		F4E66CBF1CEB629600BF25EA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F4C49E4B1CEB63A2009D3B72 /* Custom Views */,
+				F4C49E501CEB6503009D3B72 /* NRGAboutBoxWindowController.h */,
+				F4C49E511CEB6503009D3B72 /* NRGAboutBoxWindowController.m */,
+				F4C49E521CEB6503009D3B72 /* NRGAboutBoxWindowController.xib */,
+				F4E66CC01CEB634000BF25EA /* NRGConfigurationWindowController.h */,
+				F4E66CC11CEB634000BF25EA /* NRGConfigurationWindowController.m */,
+				F488E0081CF21E8500C4B7A0 /* NRGModuleView.xib */,
+				F474D7A71CEE693B00FE6DE0 /* NRGConfigurationWindowController.xib */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4E66C971CEB5F1C00BF25EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A793111CF1D42300E2EFD7 /* NRGCollectionViewItem.h in Headers */,
+				F4C49E4E1CEB63AC009D3B72 /* NRGWindow.h in Headers */,
+				F4B5E6021CEE5FE800B989C9 /* ILifeMediaBrowser.h in Headers */,
+				F4A7930F1CF1D42300E2EFD7 /* NRGCollectionView.h in Headers */,
+				F4E66CC31CEB634000BF25EA /* NRGConfigurationWindowController.h in Headers */,
+				F4A793131CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.h in Headers */,
+				F4E66CBD1CEB618900BF25EA /* ScreenSaverModule.h in Headers */,
+				F4C49E531CEB6503009D3B72 /* NRGAboutBoxWindowController.h in Headers */,
+				F4E66CB71CEB5F2C00BF25EA /* NRGSettings.h in Headers */,
+				F467EF6A1CEB9E7D0037948B /* NRGSecondaryBox.h in Headers */,
+				F486507A1CEFB32600523639 /* SlideShows.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F4E66C9A1CEB5F1C00BF25EA /* Energy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4E66CB21CEB5F1C00BF25EA /* Build configuration list for PBXNativeTarget "Energy" */;
+			buildPhases = (
+				F4E66C951CEB5F1C00BF25EA /* Sources */,
+				F4E66C961CEB5F1C00BF25EA /* Frameworks */,
+				F4E66C971CEB5F1C00BF25EA /* Headers */,
+				F4E66C981CEB5F1C00BF25EA /* Resources */,
+				F4E66C991CEB5F1C00BF25EA /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Energy;
+			productName = Energy;
+			productReference = F4E66C9B1CEB5F1C00BF25EA /* Energy.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4E66C911CEB5F1C00BF25EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Acme, inc.";
+			};
+			buildConfigurationList = F4E66C941CEB5F1C00BF25EA /* Build configuration list for PBXProject "Energy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+			);
+			mainGroup = F4E66C901CEB5F1C00BF25EA;
+			productRefGroup = F4E66C9C1CEB5F1C00BF25EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4E66C9A1CEB5F1C00BF25EA /* Energy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4E66C981CEB5F1C00BF25EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B5102F1CED066400929C15 /* unlimitedPower@2x.png in Resources */,
+				F4B5102C1CED066400929C15 /* limitedPower.png in Resources */,
+				F4B5102E1CED066400929C15 /* unlimitedPower.png in Resources */,
+				F474D7A51CEE693B00FE6DE0 /* NRGConfigurationWindowController.xib in Resources */,
+				F488E0091CF21E8500C4B7A0 /* NRGModuleView.xib in Resources */,
+				F4790AB21CEDA31E001E9ECA /* thumbnail.png in Resources */,
+				F474D7A81CEE694300FE6DE0 /* Localizable.strings in Resources */,
+				F4C49E551CEB6503009D3B72 /* NRGAboutBoxWindowController.xib in Resources */,
+				F4B5102D1CED066400929C15 /* limitedPower@2x.png in Resources */,
+				F4790AB31CEDA31E001E9ECA /* thumbnail@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F4E66C991CEB5F1C00BF25EA /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4E66C951CEB5F1C00BF25EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A793101CF1D42300E2EFD7 /* NRGCollectionView.m in Sources */,
+				F4C49E4F1CEB63AC009D3B72 /* NRGWindow.m in Sources */,
+				F467EF6B1CEB9E7D0037948B /* NRGSecondaryBox.m in Sources */,
+				F4E66CB81CEB5F2C00BF25EA /* NRGSettings.m in Sources */,
+				F4E66CAF1CEB5F1C00BF25EA /* NRGEnergySaverView.m in Sources */,
+				F4C49E541CEB6503009D3B72 /* NRGAboutBoxWindowController.m in Sources */,
+				F4A793141CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.m in Sources */,
+				F4E66CC41CEB634000BF25EA /* NRGConfigurationWindowController.m in Sources */,
+				F4A793121CF1D42300E2EFD7 /* NRGCollectionViewItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F474D7A71CEE693B00FE6DE0 /* NRGConfigurationWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F474D7A61CEE693B00FE6DE0 /* en */,
+				F488E00D1CF25EDE00C4B7A0 /* fr */,
+			);
+			name = NRGConfigurationWindowController.xib;
+			sourceTree = "<group>";
+		};
+		F474D7AA1CEE694300FE6DE0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F474D7A91CEE694300FE6DE0 /* en */,
+				F488E00E1CF25EDE00C4B7A0 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4E66CB01CEB5F1C00BF25EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F4E66CB11CEB5F1C00BF25EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F4E66CB31CEB5F1C00BF25EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Energy/Energy-Prefix.pch";
+				INFOPLIST_FILE = "Energy/Energy-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		F4E66CB41CEB5F1C00BF25EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Energy/Energy-Prefix.pch";
+				INFOPLIST_FILE = "Energy/Energy-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4E66C941CEB5F1C00BF25EA /* Build configuration list for PBXProject "Energy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E66CB01CEB5F1C00BF25EA /* Debug */,
+				F4E66CB11CEB5F1C00BF25EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4E66CB21CEB5F1C00BF25EA /* Build configuration list for PBXNativeTarget "Energy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E66CB31CEB5F1C00BF25EA /* Debug */,
+				F4E66CB41CEB5F1C00BF25EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4E66C911CEB5F1C00BF25EA /* Project object */;
+}
