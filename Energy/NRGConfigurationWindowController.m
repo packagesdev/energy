@@ -194,7 +194,7 @@ NSString * const NRGModuleNameILifeSlideshows=@"iLifeSlideshows";
 				if (tThumbnail!=nil)
 					tRepresentation[NRGCollectionViewRepresentedObjectThumbnail]=tThumbnail;
 				
-				[tAppleModulesList addObject:tRepresentation];
+				[tOtherModulesList addObject:tRepresentation];
 			}
 		}
 	}
