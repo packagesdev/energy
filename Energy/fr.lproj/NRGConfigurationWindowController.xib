@@ -163,9 +163,6 @@ Gw
                         <buttonCell key="cell" type="push" title="À propos de…" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9zn-bL-2KK">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
-                            <string key="keyEquivalent" base64-UTF8="YES">
-Gw
-</string>
                         </buttonCell>
                         <connections>
                             <action selector="showAboutBox:" target="-2" id="5q6-Nm-pcC"/>
