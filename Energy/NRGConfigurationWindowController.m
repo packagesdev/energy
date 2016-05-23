@@ -65,7 +65,7 @@ NSString * const NRGModuleNameILifeSlideshows=@"iLifeSlideshows";
 	
 	// Diaporamas "Modules" (they are not sorted alphabetically)
 	
-	MPStyleManager * tSharedStyleManager=[MPStyleManager sharedManager];
+	MPStyleManager * tSharedStyleManager=[NSClassFromString(@"MPStyleManager") sharedManager];
 	
 	NSArray * tWellKnownStyleIDs=@[@"Floating",
 								   @"Flipup",
@@ -144,6 +144,9 @@ NSString * const NRGModuleNameILifeSlideshows=@"iLifeSlideshows";
 				NSBundle * tModuleBundle=[NSBundle bundleWithPath:tPath];
 			
 				tThumbnail=[tModuleBundle imageForResource:@"thumbnail"];
+				
+				if (tThumbnail==nil)
+					tThumbnail=[tScreenEffectsPrefPaneBundle imageForResource:tModuleName];		// In 10.11.x, the Shell module is now a bundle. Go figure.
 			}
 			
 			if (tThumbnail==nil)

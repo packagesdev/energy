@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F465FBA21CF387E400D225FA /* iLifeMediaBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F465FBA11CF387E400D225FA /* iLifeMediaBrowser.framework */; };
 		F467EF6A1CEB9E7D0037948B /* NRGSecondaryBox.h in Headers */ = {isa = PBXBuildFile; fileRef = F467EF681CEB9E7D0037948B /* NRGSecondaryBox.h */; };
 		F467EF6B1CEB9E7D0037948B /* NRGSecondaryBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F467EF691CEB9E7D0037948B /* NRGSecondaryBox.m */; };
 		F474D7A51CEE693B00FE6DE0 /* NRGConfigurationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F474D7A71CEE693B00FE6DE0 /* NRGConfigurationWindowController.xib */; };
@@ -14,7 +15,6 @@
 		F4790AB21CEDA31E001E9ECA /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F4790AB01CEDA31E001E9ECA /* thumbnail.png */; };
 		F4790AB31CEDA31E001E9ECA /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4790AB11CEDA31E001E9ECA /* thumbnail@2x.png */; };
 		F486507A1CEFB32600523639 /* SlideShows.h in Headers */ = {isa = PBXBuildFile; fileRef = F48650781CEFB32600523639 /* SlideShows.h */; };
-		F486507D1CEFB36C00523639 /* Slideshows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F486507C1CEFB36C00523639 /* Slideshows.framework */; };
 		F488E0091CF21E8500C4B7A0 /* NRGModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F488E0081CF21E8500C4B7A0 /* NRGModuleView.xib */; };
 		F4A7930F1CF1D42300E2EFD7 /* NRGCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A793091CF1D42300E2EFD7 /* NRGCollectionView.h */; };
 		F4A793101CF1D42300E2EFD7 /* NRGCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A7930A1CF1D42300E2EFD7 /* NRGCollectionView.m */; };
@@ -26,7 +26,6 @@
 		F4B5102D1CED066400929C15 /* limitedPower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B510291CED066400929C15 /* limitedPower@2x.png */; };
 		F4B5102E1CED066400929C15 /* unlimitedPower.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B5102A1CED066400929C15 /* unlimitedPower.png */; };
 		F4B5102F1CED066400929C15 /* unlimitedPower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B5102B1CED066400929C15 /* unlimitedPower@2x.png */; };
-		F4B5E6001CEE596F00B989C9 /* iLifeMediaBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5E5FF1CEE596F00B989C9 /* iLifeMediaBrowser.framework */; };
 		F4B5E6021CEE5FE800B989C9 /* ILifeMediaBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B5E6011CEE5FE800B989C9 /* ILifeMediaBrowser.h */; };
 		F4C49E4E1CEB63AC009D3B72 /* NRGWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C49E4C1CEB63AC009D3B72 /* NRGWindow.h */; };
 		F4C49E4F1CEB63AC009D3B72 /* NRGWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C49E4D1CEB63AC009D3B72 /* NRGWindow.m */; };
@@ -45,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F465FBA11CF387E400D225FA /* iLifeMediaBrowser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iLifeMediaBrowser.framework; path = System/Library/PrivateFrameworks/iLifeMediaBrowser.framework; sourceTree = SDKROOT; };
 		F467EF681CEB9E7D0037948B /* NRGSecondaryBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGSecondaryBox.h; sourceTree = "<group>"; };
 		F467EF691CEB9E7D0037948B /* NRGSecondaryBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGSecondaryBox.m; sourceTree = "<group>"; };
 		F474D7A61CEE693B00FE6DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NRGConfigurationWindowController.xib; sourceTree = "<group>"; };
@@ -52,7 +52,6 @@
 		F4790AB01CEDA31E001E9ECA /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		F4790AB11CEDA31E001E9ECA /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		F48650781CEFB32600523639 /* SlideShows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideShows.h; sourceTree = "<group>"; };
-		F486507C1CEFB36C00523639 /* Slideshows.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Slideshows.framework; path = System/Library/PrivateFrameworks/Slideshows.framework; sourceTree = SDKROOT; };
 		F488E0081CF21E8500C4B7A0 /* NRGModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRGModuleView.xib; sourceTree = "<group>"; };
 		F488E00D1CF25EDE00C4B7A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/NRGConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F488E00E1CF25EDE00C4B7A0 /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -66,7 +65,6 @@
 		F4B510291CED066400929C15 /* limitedPower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "limitedPower@2x.png"; path = "images/limitedPower@2x.png"; sourceTree = "<group>"; };
 		F4B5102A1CED066400929C15 /* unlimitedPower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unlimitedPower.png; path = images/unlimitedPower.png; sourceTree = "<group>"; };
 		F4B5102B1CED066400929C15 /* unlimitedPower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unlimitedPower@2x.png"; path = "images/unlimitedPower@2x.png"; sourceTree = "<group>"; };
-		F4B5E5FF1CEE596F00B989C9 /* iLifeMediaBrowser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iLifeMediaBrowser.framework; path = System/Library/PrivateFrameworks/iLifeMediaBrowser.framework; sourceTree = SDKROOT; };
 		F4B5E6011CEE5FE800B989C9 /* ILifeMediaBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILifeMediaBrowser.h; sourceTree = "<group>"; };
 		F4C49E4C1CEB63AC009D3B72 /* NRGWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGWindow.h; sourceTree = "<group>"; };
 		F4C49E4D1CEB63AC009D3B72 /* NRGWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGWindow.m; sourceTree = "<group>"; };
@@ -96,8 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B5E6001CEE596F00B989C9 /* iLifeMediaBrowser.framework in Frameworks */,
-				F486507D1CEFB36C00523639 /* Slideshows.framework in Frameworks */,
+				F465FBA21CF387E400D225FA /* iLifeMediaBrowser.framework in Frameworks */,
 				F4C49E5B1CEB6DAE009D3B72 /* IOKit.framework in Frameworks */,
 				F4E66CA11CEB5F1C00BF25EA /* ScreenSaver.framework in Frameworks */,
 				F4E66C9F1CEB5F1C00BF25EA /* Cocoa.framework in Frameworks */,
@@ -110,8 +107,7 @@
 		F486507E1CEFB37100523639 /* Private Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4B5E5FF1CEE596F00B989C9 /* iLifeMediaBrowser.framework */,
-				F486507C1CEFB36C00523639 /* Slideshows.framework */,
+				F465FBA11CF387E400D225FA /* iLifeMediaBrowser.framework */,
 			);
 			name = "Private Frameworks";
 			sourceTree = "<group>";
@@ -284,8 +280,9 @@
 		F4E66C911CEB5F1C00BF25EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NRG;
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Acme, inc.";
+				ORGANIZATIONNAME = Whitebox;
 			};
 			buildConfigurationList = F4E66C941CEB5F1C00BF25EA /* Build configuration list for PBXProject "Energy" */;
 			compatibilityVersion = "Xcode 3.2";

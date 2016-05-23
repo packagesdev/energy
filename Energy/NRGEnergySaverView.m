@@ -25,6 +25,8 @@
 
 #import "NRGSettings.h"
 
+#include <dlfcn.h>
+
 static id _runningScreenSaverView=nil;
 
 void NRGPowerSourceCallback(void *context);
@@ -51,11 +53,16 @@ void NRGPowerSourceCallback(void *context);
 
 @implementation NRGEnergySaverView
 
++ (void)initialize
+{
+	dlopen("/System/Library/PrivateFrameworks/Slideshows.framework/Slideshows", RTLD_LAZY);
+}
+
 + (NSString *)displayNameForModule:(ScreenSaverModule *)inModule styleID:(NSString *)inStyleID
 {
 	if ([[inModule name] isEqualToString:@"iLifeSlideshows"]==YES && inStyleID!=nil)
 	{
-		MPStyleManager * tSharedStyleManager=[MPStyleManager sharedManager];
+		MPStyleManager * tSharedStyleManager=[NSClassFromString(@"MPStyleManager") sharedManager];
 		
 		return [tSharedStyleManager localizedNameForStyleID:inStyleID];
 	}
@@ -142,8 +149,8 @@ void NRGPowerSourceCallback(void *context);
 		
 		ScreenSaverModule * tModule=nil;
 		
-		if (([tModuleName isEqualToString:@"iTunes Artwork"] == YES) &&
-			([[[ILPluginManager sharedPluginManager] pluginForIdentifier:@"com.apple.iTunes" forceLoad:YES] canLoadData] ==NO))
+		if (([tModuleName isEqualToString:@"iTunes Artwork"] == YES)/* &&
+			([[[ILPluginManager sharedPluginManager] pluginForIdentifier:@"com.apple.iTunes" forceLoad:YES] canLoadData] ==NO)*/)
 		{
 			NSString * tMessage=NSLocalizedStringFromTableInBundle(@"The iTunes Artwork module could not be used.",@"Localizable",[NSBundle bundleForClass:[self class]],@"");
 			
