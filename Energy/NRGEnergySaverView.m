@@ -26,10 +26,9 @@
 #import "NRGSettings.h"
 
 #include <dlfcn.h>
+#include <notify.h>
 
 static id _runningScreenSaverView=nil;
-
-void NRGPowerSourceCallback(void *context);
 
 @interface NRGEnergySaverView ()
 {
@@ -38,7 +37,7 @@ void NRGPowerSourceCallback(void *context);
     ScreenSaverModule * _unlimitedPowerModule;
 	NSString * _unlimitedPowerModuleStyleID;
 	
-	CFRunLoopSourceRef _limitedPowerSourceRef;
+	int _notificationToken;
 	
     // Preferences
 	
@@ -149,8 +148,8 @@ void NRGPowerSourceCallback(void *context);
 		
 		ScreenSaverModule * tModule=nil;
 		
-		if (([tModuleName isEqualToString:@"iTunes Artwork"] == YES)/* &&
-			([[[ILPluginManager sharedPluginManager] pluginForIdentifier:@"com.apple.iTunes" forceLoad:YES] canLoadData] ==NO)*/)
+		if (([tModuleName isEqualToString:@"iTunes Artwork"] == YES) &&
+			([[[ILPluginManager sharedPluginManager] pluginForIdentifier:@"com.apple.iTunes" forceLoad:YES] canLoadData] ==NO))
 		{
 			NSString * tMessage=NSLocalizedStringFromTableInBundle(@"The iTunes Artwork module could not be used.",@"Localizable",[NSBundle bundleForClass:[self class]],@"");
 			
@@ -224,17 +223,23 @@ void NRGPowerSourceCallback(void *context);
 	
     [super startAnimation];
 	
-	_limitedPowerSourceRef=IOPSCreateLimitedPowerNotification(NRGPowerSourceCallback, (__bridge void *) self);
+	NRGEnergySaverView * __weak tWeakSelf=self;
 	
-	CFRunLoopAddSource(CFRunLoopGetMain(),_limitedPowerSourceRef,kCFRunLoopDefaultMode);
-
+	uint32_t tRegistrationStatus=notify_register_dispatch(kIOPSNotifyAnyPowerSource, &_notificationToken, dispatch_get_main_queue(), ^(int bToken) {
+		
+		NRGEnergySaverView * tStrongSelf=tWeakSelf;
+		
+		[tStrongSelf setNeedsDisplay:YES];
+		
+	});
+	
+	if (tRegistrationStatus!=NOTIFY_STATUS_OK)
+		NSLog(@"Could not register for power source notifications (status=%d)",tRegistrationStatus);
 }
 
 - (void)stopAnimation
 {
-	CFRunLoopRemoveSource(CFRunLoopGetMain(),_limitedPowerSourceRef,kCFRunLoopDefaultMode);
-	CFRelease(_limitedPowerSourceRef);
-	_limitedPowerSourceRef=NULL;
+	notify_cancel(_notificationToken);
 	
     _limitedPowerModule=nil;
 	_limitedPowerModuleStyleID=nil;
@@ -376,8 +381,3 @@ void NRGPowerSourceCallback(void *context);
 }
 
 @end
-
-void NRGPowerSourceCallback(void *context)
-{
-	[((__bridge NRGEnergySaverView *) context) setNeedsDisplay:YES];
-}
