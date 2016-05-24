@@ -48,7 +48,7 @@
 			
 			NSMutableParagraphStyle * tMutableParagraphStyle=[[NSParagraphStyle defaultParagraphStyle] mutableCopy];
 			
-			[tMutableParagraphStyle setLineBreakMode:NSLineBreakByTruncatingMiddle];
+			[tMutableParagraphStyle setLineBreakMode:NSLineBreakByTruncatingTail];
 			[tMutableParagraphStyle setAlignment:NSCenterTextAlignment];
 			
 			NSShadow * tShadow=[NSShadow new];
