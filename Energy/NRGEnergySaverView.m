@@ -225,7 +225,7 @@ static id _runningScreenSaverView=nil;
 	
 	NRGEnergySaverView * __weak tWeakSelf=self;
 	
-	uint32_t tRegistrationStatus=notify_register_dispatch(kIOPSNotifyAnyPowerSource, &_notificationToken, dispatch_get_main_queue(), ^(int bToken) {
+	uint32_t tRegistrationStatus=notify_register_dispatch(kIOPSNotifyPowerSource, &_notificationToken, dispatch_get_main_queue(), ^(int bToken) {
 		
 		NRGEnergySaverView * tStrongSelf=tWeakSelf;
 		
