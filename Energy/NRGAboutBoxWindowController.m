@@ -36,7 +36,7 @@
     
     NSDictionary * tInfoDictionary=[tBundle infoDictionary];
     
-    [_versionLabel setStringValue:[NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"Version %@ (%@)",@"Localizable",tBundle,@""),[tInfoDictionary objectForKey:@"CFBundleShortVersionString"],[tInfoDictionary objectForKey:@"CFBundleVersion"]]];
+    [_versionLabel setStringValue:[NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"Version %@ (%@)",@"Localizable",tBundle,@""),tInfoDictionary[@"CFBundleShortVersionString"],tInfoDictionary[@"CFBundleVersion"]]];
     
     [_copyrightLabel setStringValue:[NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"Legal terms",@"Localizable",tBundle,@""),[[NSCalendarDate date] yearOfCommonEra]]];
 }
