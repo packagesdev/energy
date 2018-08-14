@@ -5,5 +5,15 @@
 //
 
 #ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
+
+#import <Cocoa/Cocoa.h>
+
+	#import "NSColor+LabelColor.h"
+
+	#import "NSView+Appearance.h"
+
+#endif
+
+#ifndef NSAppKitVersionNumber10_14
+#define NSAppKitVersionNumber10_14 1641.10
 #endif
