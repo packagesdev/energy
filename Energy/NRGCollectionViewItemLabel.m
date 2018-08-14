@@ -1,5 +1,5 @@
 /*
- Copyright (c) 2016, Stephane Sudre
+ Copyright (c) 2016-2018, Stephane Sudre
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -77,10 +77,9 @@
 			
 			[tMutableParagraphStyle setLineBreakMode:NSLineBreakByTruncatingMiddle];
 			[tMutableParagraphStyle setAlignment:NSCenterTextAlignment];
-
 			
 			sUnselectedAttributesDictionary=@{
-											  NSForegroundColorAttributeName : [NSColor blackColor],
+											  NSForegroundColorAttributeName : [NSColor labelColor],
 											  NSParagraphStyleAttributeName : tMutableParagraphStyle,
 											  NSFontAttributeName : [NSFont systemFontOfSize:11.0]
 											  };

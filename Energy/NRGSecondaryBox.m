@@ -1,5 +1,5 @@
 /*
- Copyright (c) 2015, Stephane Sudre
+ Copyright (c) 2015-2018, Stephane Sudre
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -13,6 +13,10 @@
 
 #import "NRGSecondaryBox.h"
 
+#ifndef NSAppKitVersionNumber10_14
+#define NSAppKitVersionNumber10_14 1641.10
+#endif
+
 @implementation NRGSecondaryBox
 
 - (BOOL) isOpaque
@@ -20,17 +24,40 @@
     return NO;
 }
 
+- (BOOL)isEffectiveAppareanceDarkAqua
+{
+	//return YES;
+	
+	if (NSAppKitVersionNumber<NSAppKitVersionNumber10_14)
+		return NO;
+	
+	if ([self conformsToProtocol:@protocol(NSAppearanceCustomization)]==NO)
+		return NO;
+	
+	id tAppearance=self.effectiveAppearance;
+	
+	NSString * tBestMatch=(NSString *)[tAppearance performSelector:@selector(bestMatchFromAppearancesWithNames:)
+														withObject:@[@"NSAppearanceNameAqua",@"NSAppearanceNameDarkAqua"]];
+	
+	return [tBestMatch isEqualToString:@"NSAppearanceNameDarkAqua"];
+}
+
 #pragma mark -
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-    [[NSColor colorWithDeviceWhite:1.0 alpha:0.8] set];
-    
-    NSRectFillUsingOperation(dirtyRect, NSCompositeSourceOver);
-    
-    [[NSColor colorWithDeviceWhite:0.87 alpha:1.0] set];
-    
-    NSFrameRect([self bounds]);
+	if ([self isEffectiveAppareanceDarkAqua]==NO)
+		[[NSColor colorWithDeviceWhite:1.0 alpha:0.8] set];
+	else
+		[[NSColor colorWithDeviceWhite:0.0 alpha:0.15] set];
+	
+	NSRectFillUsingOperation(dirtyRect,NSCompositeSourceOver);
+	
+	[[NSColor quaternaryLabelColor] set];
+	
+	NSRect tFrameRect= NSInsetRect([self bounds],-1,1.0);
+	
+	NSFrameRectWithWidthUsingOperation(tFrameRect, NSWidth(tFrameRect), NSCompositeSourceOver);
 }
 
 @end

@@ -16,6 +16,8 @@
 		F4790AB31CEDA31E001E9ECA /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4790AB11CEDA31E001E9ECA /* thumbnail@2x.png */; };
 		F486507A1CEFB32600523639 /* SlideShows.h in Headers */ = {isa = PBXBuildFile; fileRef = F48650781CEFB32600523639 /* SlideShows.h */; };
 		F488E0091CF21E8500C4B7A0 /* NRGModuleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F488E0081CF21E8500C4B7A0 /* NRGModuleView.xib */; };
+		F4A36B142122C1920022EEC6 /* NSView+Appearance.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A36B122122C1920022EEC6 /* NSView+Appearance.h */; };
+		F4A36B152122C1920022EEC6 /* NSView+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A36B132122C1920022EEC6 /* NSView+Appearance.m */; };
 		F4A7930F1CF1D42300E2EFD7 /* NRGCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A793091CF1D42300E2EFD7 /* NRGCollectionView.h */; };
 		F4A793101CF1D42300E2EFD7 /* NRGCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A7930A1CF1D42300E2EFD7 /* NRGCollectionView.m */; };
 		F4A793111CF1D42300E2EFD7 /* NRGCollectionViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A7930B1CF1D42300E2EFD7 /* NRGCollectionViewItem.h */; };
@@ -33,6 +35,8 @@
 		F4C49E541CEB6503009D3B72 /* NRGAboutBoxWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C49E511CEB6503009D3B72 /* NRGAboutBoxWindowController.m */; };
 		F4C49E551CEB6503009D3B72 /* NRGAboutBoxWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4C49E521CEB6503009D3B72 /* NRGAboutBoxWindowController.xib */; };
 		F4C49E5B1CEB6DAE009D3B72 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C49E5A1CEB6DAE009D3B72 /* IOKit.framework */; };
+		F4D0104F210E41F500EC164F /* NSColor+LabelColor.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D0104D210E41F500EC164F /* NSColor+LabelColor.h */; };
+		F4D01050210E41F500EC164F /* NSColor+LabelColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0104E210E41F500EC164F /* NSColor+LabelColor.m */; };
 		F4E66C9F1CEB5F1C00BF25EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E66C9E1CEB5F1C00BF25EA /* Cocoa.framework */; };
 		F4E66CA11CEB5F1C00BF25EA /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E66CA01CEB5F1C00BF25EA /* ScreenSaver.framework */; };
 		F4E66CAF1CEB5F1C00BF25EA /* NRGEnergySaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E66CAE1CEB5F1C00BF25EA /* NRGEnergySaverView.m */; };
@@ -55,6 +59,8 @@
 		F488E0081CF21E8500C4B7A0 /* NRGModuleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRGModuleView.xib; sourceTree = "<group>"; };
 		F488E00D1CF25EDE00C4B7A0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/NRGConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F488E00E1CF25EDE00C4B7A0 /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4A36B122122C1920022EEC6 /* NSView+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+Appearance.h"; sourceTree = "<group>"; };
+		F4A36B132122C1920022EEC6 /* NSView+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+Appearance.m"; sourceTree = "<group>"; };
 		F4A793091CF1D42300E2EFD7 /* NRGCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGCollectionView.h; sourceTree = "<group>"; };
 		F4A7930A1CF1D42300E2EFD7 /* NRGCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGCollectionView.m; sourceTree = "<group>"; };
 		F4A7930B1CF1D42300E2EFD7 /* NRGCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGCollectionViewItem.h; sourceTree = "<group>"; };
@@ -72,6 +78,8 @@
 		F4C49E511CEB6503009D3B72 /* NRGAboutBoxWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGAboutBoxWindowController.m; sourceTree = "<group>"; };
 		F4C49E521CEB6503009D3B72 /* NRGAboutBoxWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NRGAboutBoxWindowController.xib; sourceTree = "<group>"; };
 		F4C49E5A1CEB6DAE009D3B72 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F4D0104D210E41F500EC164F /* NSColor+LabelColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+LabelColor.h"; sourceTree = "<group>"; };
+		F4D0104E210E41F500EC164F /* NSColor+LabelColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+LabelColor.m"; sourceTree = "<group>"; };
 		F4E66C9B1CEB5F1C00BF25EA /* Energy.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Energy.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E66C9E1CEB5F1C00BF25EA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F4E66CA01CEB5F1C00BF25EA /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
@@ -140,6 +148,17 @@
 			name = "Custom Views";
 			sourceTree = "<group>";
 		};
+		F4D0104C210E3F9500EC164F /* AppKit Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4A36B122122C1920022EEC6 /* NSView+Appearance.h */,
+				F4A36B132122C1920022EEC6 /* NSView+Appearance.m */,
+				F4D0104D210E41F500EC164F /* NSColor+LabelColor.h */,
+				F4D0104E210E41F500EC164F /* NSColor+LabelColor.m */,
+			);
+			name = "AppKit Extensions";
+			sourceTree = "<group>";
+		};
 		F4E66C901CEB5F1C00BF25EA = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +200,7 @@
 		F4E66CA61CEB5F1C00BF25EA /* Energy */ = {
 			isa = PBXGroup;
 			children = (
+				F4D0104C210E3F9500EC164F /* AppKit Extensions */,
 				F4E66CB91CEB616A00BF25EA /* Private APIs */,
 				F4E66CAD1CEB5F1C00BF25EA /* NRGEnergySaverView.h */,
 				F4E66CAE1CEB5F1C00BF25EA /* NRGEnergySaverView.m */,
@@ -241,11 +261,13 @@
 				F4A793111CF1D42300E2EFD7 /* NRGCollectionViewItem.h in Headers */,
 				F4C49E4E1CEB63AC009D3B72 /* NRGWindow.h in Headers */,
 				F4B5E6021CEE5FE800B989C9 /* ILifeMediaBrowser.h in Headers */,
+				F4A36B142122C1920022EEC6 /* NSView+Appearance.h in Headers */,
 				F4A7930F1CF1D42300E2EFD7 /* NRGCollectionView.h in Headers */,
 				F4E66CC31CEB634000BF25EA /* NRGConfigurationWindowController.h in Headers */,
 				F4A793131CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.h in Headers */,
 				F4E66CBD1CEB618900BF25EA /* ScreenSaverModule.h in Headers */,
 				F4C49E531CEB6503009D3B72 /* NRGAboutBoxWindowController.h in Headers */,
+				F4D0104F210E41F500EC164F /* NSColor+LabelColor.h in Headers */,
 				F4E66CB71CEB5F2C00BF25EA /* NRGSettings.h in Headers */,
 				F467EF6A1CEB9E7D0037948B /* NRGSecondaryBox.h in Headers */,
 				F486507A1CEFB32600523639 /* SlideShows.h in Headers */,
@@ -337,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A36B152122C1920022EEC6 /* NSView+Appearance.m in Sources */,
 				F4A793101CF1D42300E2EFD7 /* NRGCollectionView.m in Sources */,
 				F4C49E4F1CEB63AC009D3B72 /* NRGWindow.m in Sources */,
 				F467EF6B1CEB9E7D0037948B /* NRGSecondaryBox.m in Sources */,
@@ -344,6 +367,7 @@
 				F4E66CAF1CEB5F1C00BF25EA /* NRGEnergySaverView.m in Sources */,
 				F4C49E541CEB6503009D3B72 /* NRGAboutBoxWindowController.m in Sources */,
 				F4A793141CF1D42300E2EFD7 /* NRGCollectionViewItemLabel.m in Sources */,
+				F4D01050210E41F500EC164F /* NSColor+LabelColor.m in Sources */,
 				F4E66CC41CEB634000BF25EA /* NRGConfigurationWindowController.m in Sources */,
 				F4A793121CF1D42300E2EFD7 /* NRGCollectionViewItem.m in Sources */,
 			);
@@ -447,7 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 11;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
@@ -466,7 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 11;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
