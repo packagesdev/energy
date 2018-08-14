@@ -26,13 +26,13 @@ NSString * const NRGCollectionViewRepresentedObjectStyleID=@"styleID";
 	IBOutlet NRGCollectionViewItemLabel * _nameLabelView;
 }
 
-@property (nonatomic,readwrite) NSImage * thumbnail;
-@property (nonatomic,readwrite,copy) NSString * displayName;
+	@property (nonatomic,readwrite) NSImage * thumbnail;
+	@property (nonatomic,readwrite,copy) NSString * displayName;
 
-@property (nonatomic,readwrite,copy) NSString * name;
-@property (nonatomic,readwrite,copy) NSString * styleID;
+	@property (nonatomic,readwrite,copy) NSString * name;
+	@property (nonatomic,readwrite,copy) NSString * styleID;
 
-@property (readwrite) NSInteger tag;
+	@property (readwrite) NSInteger tag;
 
 @end
 

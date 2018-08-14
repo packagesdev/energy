@@ -21,10 +21,10 @@ extern NSString * const NRGCollectionViewRepresentedObjectStyleID;
 
 @interface NRGCollectionViewItem : NSCollectionViewItem
 
-@property (nonatomic,readonly) NSImage * thumbnail;
-@property (nonatomic,readonly,copy) NSString * displayName;
+	@property (nonatomic,readonly) NSImage * thumbnail;
+	@property (nonatomic,readonly,copy) NSString * displayName;
 
-@property (nonatomic,readonly,copy) NSString * name;
-@property (nonatomic,readonly,copy) NSString * styleID;
+	@property (nonatomic,readonly,copy) NSString * name;
+	@property (nonatomic,readonly,copy) NSString * styleID;
 
 @end
