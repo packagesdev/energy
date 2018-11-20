@@ -17,3 +17,7 @@
 #ifndef NSAppKitVersionNumber10_14
 #define NSAppKitVersionNumber10_14 1641.10
 #endif
+
+#ifndef NSAppKitVersionNumber10_13
+#define NSAppKitVersionNumber10_13 1561.0
+#endif

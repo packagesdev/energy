@@ -45,9 +45,12 @@
 		F4E66CBD1CEB618900BF25EA /* ScreenSaverModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E66CBB1CEB618900BF25EA /* ScreenSaverModule.h */; };
 		F4E66CC31CEB634000BF25EA /* NRGConfigurationWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E66CC01CEB634000BF25EA /* NRGConfigurationWindowController.h */; };
 		F4E66CC41CEB634000BF25EA /* NRGConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E66CC11CEB634000BF25EA /* NRGConfigurationWindowController.m */; };
+		F4F0E48121A36C5C00F889AC /* NSImage+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F0E47F21A36C5C00F889AC /* NSImage+Private.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F43C1C6921A4B02100325FD4 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/NRGConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F43C1C6A21A4B02100325FD4 /* es */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F465FBA11CF387E400D225FA /* iLifeMediaBrowser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iLifeMediaBrowser.framework; path = System/Library/PrivateFrameworks/iLifeMediaBrowser.framework; sourceTree = SDKROOT; };
 		F467EF681CEB9E7D0037948B /* NRGSecondaryBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGSecondaryBox.h; sourceTree = "<group>"; };
 		F467EF691CEB9E7D0037948B /* NRGSecondaryBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGSecondaryBox.m; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		F4E66CBB1CEB618900BF25EA /* ScreenSaverModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSaverModule.h; sourceTree = "<group>"; };
 		F4E66CC01CEB634000BF25EA /* NRGConfigurationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRGConfigurationWindowController.h; sourceTree = "<group>"; };
 		F4E66CC11CEB634000BF25EA /* NRGConfigurationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRGConfigurationWindowController.m; sourceTree = "<group>"; };
+		F4F0E47F21A36C5C00F889AC /* NSImage+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +236,7 @@
 				F4B5E6011CEE5FE800B989C9 /* ILifeMediaBrowser.h */,
 				F4E66CBA1CEB617500BF25EA /* ScreenSaverModules.h */,
 				F4E66CBB1CEB618900BF25EA /* ScreenSaverModule.h */,
+				F4F0E47F21A36C5C00F889AC /* NSImage+Private.h */,
 			);
 			name = "Private APIs";
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				F4E66CB71CEB5F2C00BF25EA /* NRGSettings.h in Headers */,
 				F467EF6A1CEB9E7D0037948B /* NRGSecondaryBox.h in Headers */,
 				F486507A1CEFB32600523639 /* SlideShows.h in Headers */,
+				F4F0E48121A36C5C00F889AC /* NSImage+Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +319,7 @@
 			knownRegions = (
 				en,
 				fr,
+				es,
 			);
 			mainGroup = F4E66C901CEB5F1C00BF25EA;
 			productRefGroup = F4E66C9C1CEB5F1C00BF25EA /* Products */;
@@ -381,6 +388,7 @@
 			children = (
 				F474D7A61CEE693B00FE6DE0 /* en */,
 				F488E00D1CF25EDE00C4B7A0 /* fr */,
+				F43C1C6921A4B02100325FD4 /* es */,
 			);
 			name = NRGConfigurationWindowController.xib;
 			sourceTree = "<group>";
@@ -390,6 +398,7 @@
 			children = (
 				F474D7A91CEE694300FE6DE0 /* en */,
 				F488E00E1CF25EDE00C4B7A0 /* fr */,
+				F43C1C6A21A4B02100325FD4 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -471,7 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 18;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
@@ -490,7 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 18;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
