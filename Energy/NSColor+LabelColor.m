@@ -15,21 +15,21 @@
 
 #import <objc/objc-class.h>
 
-@interface NSColor (LabelColor_WB)
+@interface NSColor (LabelColor_NRG)
 
-+ (NSColor *)WB_labelColor;
++ (NSColor *)NRG_labelColor;
 
-+ (NSColor *)WB_secondaryLabelColor;
++ (NSColor *)NRG_secondaryLabelColor;
 
-+ (NSColor *)WB_tertiaryLabelColor;
++ (NSColor *)NRG_tertiaryLabelColor;
 
-+ (NSColor *)WB_quaternaryLabelColor;
++ (NSColor *)NRG_quaternaryLabelColor;
 
-+ (NSColor *)WB_containerBorderColor;
++ (NSColor *)NRG_containerBorderColor;
 
 @end
 
-@implementation NSColor (LabelColor_WB)
+@implementation NSColor (LabelColor_NRG)
 
 + (void)load
 {
@@ -37,35 +37,35 @@
 	
 	if ([self respondsToSelector:@selector(labelColor)]==NO)
 	{
-		Method origMethod = class_getClassMethod(tClass, @selector(WB_labelColor));
+		Method origMethod = class_getClassMethod(tClass, @selector(NRG_labelColor));
 		
 		class_addMethod(tClass, @selector(labelColor), method_getImplementation(origMethod),method_getTypeEncoding(origMethod));
 	}
 	
 	if ([self respondsToSelector:@selector(secondaryLabelColor)]==NO)
 	{
-		Method origMethod = class_getClassMethod(tClass, @selector(WB_secondaryLabelColor));
+		Method origMethod = class_getClassMethod(tClass, @selector(NRG_secondaryLabelColor));
 		
 		class_addMethod(tClass, @selector(secondaryLabelColor), method_getImplementation(origMethod),method_getTypeEncoding(origMethod));
 	}
 	
 	if ([self respondsToSelector:@selector(tertiaryLabelColor)]==NO)
 	{
-		Method origMethod = class_getClassMethod(tClass, @selector(WB_tertiaryLabelColor));
+		Method origMethod = class_getClassMethod(tClass, @selector(NRG_tertiaryLabelColor));
 		
 		class_addMethod(tClass, @selector(tertiaryLabelColor), method_getImplementation(origMethod),method_getTypeEncoding(origMethod));
 	}
 	
 	if ([self respondsToSelector:@selector(quaternaryLabelColor)]==NO)
 	{
-		Method origMethod = class_getClassMethod(tClass, @selector(WB_quaternaryLabelColor));
+		Method origMethod = class_getClassMethod(tClass, @selector(NRG_quaternaryLabelColor));
 		
 		class_addMethod(tClass, @selector(quaternaryLabelColor), method_getImplementation(origMethod),method_getTypeEncoding(origMethod));
 	}
 	
 	if ([self respondsToSelector:@selector(containerBorderColor)]==NO)
 	{
-		Method origMethod = class_getClassMethod(tClass, @selector(WB_containerBorderColor));
+		Method origMethod = class_getClassMethod(tClass, @selector(NRG_containerBorderColor));
 		
 		class_addMethod(tClass, @selector(containerBorderColor), method_getImplementation(origMethod),method_getTypeEncoding(origMethod));
 	}
@@ -73,27 +73,27 @@
 
 #pragma mark -
 
-+ (NSColor *)WB_labelColor
++ (NSColor *)NRG_labelColor
 {
 	return [NSColor colorWithDeviceWhite:0.0 alpha:0.85];
 }
 
-+ (NSColor *)WB_secondaryLabelColor
++ (NSColor *)NRG_secondaryLabelColor
 {
 	return [NSColor colorWithDeviceWhite:0.0 alpha:0.5];
 }
 
-+ (NSColor *)WB_tertiaryLabelColor
++ (NSColor *)NRG_tertiaryLabelColor
 {
 	return [NSColor colorWithDeviceWhite:0.0 alpha:0.25];
 }
 
-+ (NSColor *)WB_quaternaryLabelColor
++ (NSColor *)NRG_quaternaryLabelColor
 {
 	return [NSColor colorWithDeviceWhite:0.0 alpha:0.10];
 }
 
-+ (NSColor *)WB_containerBorderColor
++ (NSColor *)NRG_containerBorderColor
 {
 	if ([[NSColor class] respondsToSelector:@selector(tertiaryLabelColor)]==YES)
 		return [[NSColor class] performSelector:@selector(tertiaryLabelColor) withObject:nil];
