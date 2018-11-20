@@ -23,6 +23,8 @@
 #import "ILifeMediaBrowser.h"
 #import "SlideShows.h"
 
+#import "NSImage+Private.h"
+
 #import "NRGSettings.h"
 
 #include <dlfcn.h>
@@ -258,9 +260,6 @@ static id _runningScreenSaverView=nil;
 
 - (void)drawRect:(NSRect)rect
 {
-    [[NSColor whiteColor] set];
-    NSRectFill(rect);
-    
     if ([self isPreview]==YES)
     {
 		BOOL tIsDarkAppearance=[self NRG_isEffectiveAppareanceDarkAqua];
@@ -269,26 +268,42 @@ static id _runningScreenSaverView=nil;
 		
 		tIsLimitedPowerSource=(IOPSGetTimeRemainingEstimate()!=kIOPSTimeRemainingUnlimited);
 		
-		CGFloat tLimitedPowerSourceAlpha=(tIsLimitedPowerSource==YES)? 1.0 : 0.5;
+        NSColor * tLimitedPowerSourceColor=(tIsLimitedPowerSource==YES)? [NSColor labelColor] : [NSColor tertiaryLabelColor];
+        NSColor * tUnlimitedPowerSourceColor=(tIsLimitedPowerSource==NO)? [NSColor labelColor] : [NSColor tertiaryLabelColor];
+        CGFloat tLimitedPowerSourceAlpha=(tIsLimitedPowerSource==YES)? 1.0 : 0.5;
 		CGFloat tUnimitedPowerSourceAlpha=(tIsLimitedPowerSource==NO)? 1.0 : 0.5;
 		
-		[[NSColor colorWithDeviceWhite:0.75 alpha:1.0] set];
-		
+        if (tIsDarkAppearance==NO)
+            [[NSColor whiteColor] set];
+        else
+            [[NSColor colorWithDeviceWhite:0.0 alpha:0.85] set];
+        
+        NSRectFill(rect);
+        
+		if (tIsDarkAppearance==NO)
+            [[NSColor colorWithDeviceWhite:0.75 alpha:1.0] set];
+		else
+            [[NSColor colorWithDeviceWhite:0.25 alpha:1.0] set];
+        
         NSRect tBounds=[self bounds];
         
-        NSRectFill(NSMakeRect(round(NSMidX(tBounds)),NSMinY(tBounds),1,NSHeight(tBounds)));
+        NSRectFillUsingOperation(NSMakeRect(round(NSMidX(tBounds)),NSMinY(tBounds),1,NSHeight(tBounds)),NSCompositeSourceOver);
         
         NSRect tLimitedPowerFrame=tBounds;
         tLimitedPowerFrame.size.width=round(NSWidth(tBounds)*0.5);
         
 		NSImage * tPowerSourceIcon=[[NSBundle bundleForClass:[self class]] imageForResource:@"limitedPower"];
-		
+		tPowerSourceIcon.template=YES;
+        
 		NSSize tPowerSourceIconSize=tPowerSourceIcon.size;
 		
-		[tPowerSourceIcon drawInRect:NSMakeRect(round(NSMidX(tLimitedPowerFrame)-tPowerSourceIconSize.width*0.5)+2.0,round(NSMaxY(tLimitedPowerFrame)-tPowerSourceIconSize.height-10.),tPowerSourceIconSize.width,tPowerSourceIconSize.height)
-							fromRect:NSZeroRect
-						   operation:NSCompositeSourceOver
-							fraction:tLimitedPowerSourceAlpha];
+        [tPowerSourceIcon _drawMappingAlignmentRectToRect:NSMakeRect(round(NSMidX(tLimitedPowerFrame)-tPowerSourceIconSize.width*0.5)+2.0,round(NSMaxY(tLimitedPowerFrame)-tPowerSourceIconSize.height-10.),tPowerSourceIconSize.width,tPowerSourceIconSize.height)
+                                      withState:10
+                                backgroundStyle:NSBackgroundStyleRaised
+                                      operation:NSCompositeSourceOver
+                                       fraction:tLimitedPowerSourceAlpha
+                                           flip:NO
+                                          hints:nil];
 		
 		NSImage * tThumbnail=[NRGEnergySaverView thumbnailForModule:_limitedPowerModule styleID:_limitedPowerModuleStyleID];
         
@@ -303,12 +318,12 @@ static id _runningScreenSaverView=nil;
 																   xRadius:THUMBNAIL_CORNER_RADIUS
 																   yRadius:THUMBNAIL_CORNER_RADIUS];
 		
-		[[NSColor colorWithDeviceWhite:0.25 alpha:tLimitedPowerSourceAlpha] set];
+		[tLimitedPowerSourceColor setStroke];
 		[tBezierPath stroke];
 		
         NSString * tDisplayName=[NRGEnergySaverView displayNameForModule:_limitedPowerModule styleID:_limitedPowerModuleStyleID];
         
-        NSMutableDictionary * tTitleAttributes=[@{NSForegroundColorAttributeName: [NSColor colorWithDeviceWhite:0.15 alpha:tLimitedPowerSourceAlpha],
+        NSMutableDictionary * tTitleAttributes=[@{NSForegroundColorAttributeName: tLimitedPowerSourceColor,
 												  NSFontAttributeName : [NSFont labelFontOfSize:11.0]} mutableCopy];
             
 		NSMutableParagraphStyle * tMutableParagraphStyle=[[NSParagraphStyle defaultParagraphStyle] mutableCopy];
@@ -326,13 +341,17 @@ static id _runningScreenSaverView=nil;
         tUnlimitedPowerFrame.origin.x=NSMaxX(tBounds)-NSWidth(tUnlimitedPowerFrame);
 		
 		tPowerSourceIcon=[[NSBundle bundleForClass:[self class]] imageForResource:@"unlimitedPower"];
-		
+        tPowerSourceIcon.template=YES;
+        
 		tPowerSourceIconSize=tPowerSourceIcon.size;
 		
-		[tPowerSourceIcon drawInRect:NSMakeRect(round(NSMidX(tUnlimitedPowerFrame)-tPowerSourceIconSize.width*0.5)+2.0,round(NSMaxY(tUnlimitedPowerFrame)-tPowerSourceIconSize.height-10.),tPowerSourceIconSize.width,tPowerSourceIconSize.height)
-							fromRect:NSZeroRect
-						   operation:NSCompositeSourceOver
-							fraction:tUnimitedPowerSourceAlpha];
+        [tPowerSourceIcon _drawMappingAlignmentRectToRect:NSMakeRect(round(NSMidX(tUnlimitedPowerFrame)-tPowerSourceIconSize.width*0.5)+2.0,round(NSMaxY(tUnlimitedPowerFrame)-tPowerSourceIconSize.height-10.),tPowerSourceIconSize.width,tPowerSourceIconSize.height)
+                                                withState:10
+                                          backgroundStyle:NSBackgroundStyleRaised
+                                                operation:NSCompositeSourceOver
+                                                 fraction:tUnimitedPowerSourceAlpha
+                                                     flip:NO
+                                                    hints:nil];
 		
 		tThumbnail=[NRGEnergySaverView thumbnailForModule:_unlimitedPowerModule styleID:_unlimitedPowerModuleStyleID];
         
@@ -347,12 +366,12 @@ static id _runningScreenSaverView=nil;
 													xRadius:THUMBNAIL_CORNER_RADIUS
 													yRadius:THUMBNAIL_CORNER_RADIUS];
 		
-		[[NSColor colorWithDeviceWhite:0.25 alpha:tUnimitedPowerSourceAlpha] set];
+		[tUnlimitedPowerSourceColor setStroke];
 		[tBezierPath stroke];
 		
 		tDisplayName=[NRGEnergySaverView displayNameForModule:_unlimitedPowerModule styleID:_unlimitedPowerModuleStyleID];
 		
-		[tTitleAttributes setObject:[NSColor colorWithDeviceWhite:0.15 alpha:tUnimitedPowerSourceAlpha] forKey:NSForegroundColorAttributeName];
+		[tTitleAttributes setObject:tUnlimitedPowerSourceColor forKey:NSForegroundColorAttributeName];
 		
         [tDisplayName drawInRect:NSMakeRect(NSMinX(tUnlimitedPowerFrame),NSMidY(tUnlimitedPowerFrame)-55.0-CENTER_VERTICAL_OFFSET,NSWidth(tUnlimitedPowerFrame),20) withAttributes:tTitleAttributes];
     }

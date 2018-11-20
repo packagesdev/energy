@@ -79,7 +79,7 @@
 			[tMutableParagraphStyle setAlignment:NSCenterTextAlignment];
 			
 			sUnselectedAttributesDictionary=@{
-											  NSForegroundColorAttributeName : [NSColor labelColor],
+											  NSForegroundColorAttributeName : [NSColor controlTextColor],
 											  NSParagraphStyleAttributeName : tMutableParagraphStyle,
 											  NSFontAttributeName : [NSFont systemFontOfSize:11.0]
 											  };
@@ -105,17 +105,26 @@
 	
 	if ([self isSelected]==YES)
 	{
-		tRoundRect.origin.y-=0.5;
+		//tRoundRect.origin.y-=0.5;
 		
 		NSBezierPath * tBezierPath=[NSBezierPath bezierPathWithRoundedRect:tRoundRect xRadius:tRadius yRadius:tRadius];
 		
-		[[NSColor colorWithDeviceRed:78.0/255.0 green:168.0/255.0 blue:229.0/255.0 alpha:1.0] setFill];
+		if (NSAppKitVersionNumber<NSAppKitVersionNumber10_13)
+        {
+            [[NSColor colorWithDeviceRed:78.0/255.0 green:168.0/255.0 blue:229.0/255.0 alpha:1.0] setFill];
 		
-		[tBezierPath fill];
+            [tBezierPath fill];
 		
-		[[NSColor colorWithDeviceRed:40.0/255.0 green:130.0/255.0 blue:191.0/255.0 alpha:1.0] setStroke];
+            [[NSColor colorWithDeviceRed:40.0/255.0 green:130.0/255.0 blue:191.0/255.0 alpha:1.0] setStroke];
 		
-		[tBezierPath stroke];
+            [tBezierPath stroke];
+        }
+        else
+        {
+            [[NSColor alternateSelectedControlColor] setFill];
+            
+            [tBezierPath fill];
+        }
 	}
 	
 	[tString drawInRect:NSMakeRect(NSMinX(tRoundRect)+tRadius+NRGCOLLECTIONVIEWITEMLABEL_TEXT_INSET,NSMinY(tRoundRect)-0.5,NSWidth(tRoundRect)-2*(tRadius+NRGCOLLECTIONVIEWITEMLABEL_TEXT_INSET),NSHeight(tBoundingRect)) withAttributes:tAttributes];
